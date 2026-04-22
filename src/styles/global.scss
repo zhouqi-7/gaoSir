@@ -1,0 +1,89 @@
+// 全局样式 - 复刻原站风格
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #1e88e5;
+  }
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// 容器
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// 工具类
+.clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+// 间距类
+.mt10 { margin-top: 10px; }
+.mt20 { margin-top: 20px; }
+.mb10 { margin-bottom: 10px; }
+.mb20 { margin-bottom: 20px; }
+.mb30 { margin-bottom: 30px; }
+.p20 { padding: 20px; }
+.p40 { padding: 40px 0; }
+
+.fafafa {
+  background-color: #fafafa;
+}
+
+// 主内容区
+#main {
+  .container {
+    .row {
+      display: flex;
+      gap: 30px;
+
+      .content-area {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .sidebar {
+        width: 280px;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
