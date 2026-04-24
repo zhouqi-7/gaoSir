@@ -44,3 +44,8 @@ src/
 - 开发服务器默认端口 **3000**（自动打开浏览器）
 - 所有 Element Plus 图标已在 main.js 中全局注册
 - 站点语言为中文（zh-CN）
+
+## 部署说明
+
+- 方式一：通过vercel方式部署https://vercel.com/zhouqi-7s-projects/gao-sir/settings/domains
+- 方式二：通过nginx方式部署
