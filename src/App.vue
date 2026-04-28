@@ -1,5 +1,6 @@
 <template>
   <div class="app-container">
+    <Analytics />
     <AppHeader />
     <router-view />
     <AppFooter />
@@ -7,6 +8,7 @@
 </template>
 
 <script setup>
+import { Analytics } from '@vercel/analytics/vue'
 import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
 </script>
